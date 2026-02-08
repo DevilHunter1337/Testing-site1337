@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - My Gallery Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Gallery Site</a></h1>
+            <button class="theme-toggle" id="themeToggle">
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="gallery-page">
+        <div class="container">
+            <h2 class="page-title">Gallery</h2>
+            
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="images">Images</button>
+                <button class="tab-btn" data-tab="videos">Videos</button>
+            </div>
+
+            <!-- Images Tab -->
+            <div class="tab-content active" id="images">
+                <div class="gallery-grid">
+                    <!-- Sample images - replace these with your own -->
+                    <div class="gallery-item" data-src="https://picsum.photos/800/600?random=1">
+                        <img src="https://picsum.photos/400/300?random=1" alt="Image 1">
+                    </div>
+                    <div class="gallery-item" data-src="https://picsum.photos/800/600?random=2">
+                        <img src="https://picsum.photos/400/300?random=2" alt="Image 2">
+                    </div>
+                    <div class="gallery-item" data-src="https://picsum.photos/800/600?random=3">
+                        <img src="https://picsum.photos/400/300?random=3" alt="Image 3">
+                    </div>
+                    <div class="gallery-item" data-src="https://picsum.photos/800/600?random=4">
+                        <img src="https://picsum.photos/400/300?random=4" alt="Image 4">
+                    </div>
+                    <div class="gallery-item" data-src="https://picsum.photos/800/600?random=5">
+                        <img src="https://picsum.photos/400/300?random=5" alt="Image 5">
+                    </div>
+                    <div class="gallery-item" data-src="https://picsum.photos/800/600?random=6">
+                        <img src="https://picsum.photos/400/300?random=6" alt="Image 6">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Videos Tab -->
+            <div class="tab-content" id="videos">
+                <div class="gallery-grid">
+                    <!-- Sample videos - replace these with your own -->
+                    <div class="video-item">
+                        <video controls>
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-item">
+                        <video controls>
+                            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <button class="lightbox-prev">&#10094;</button>
+        <button class="lightbox-next">&#10095;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
